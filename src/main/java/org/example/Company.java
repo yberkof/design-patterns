@@ -23,7 +23,8 @@ public class Company {
             String name = scanner.next();
             Animal byName = AnimalFactory.getByName(name, 4);
             System.out.println(byName.getClass());
-
+            if (name.equals(""))
+                break;
         }
     }
 }
